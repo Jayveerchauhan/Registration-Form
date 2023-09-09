@@ -1,0 +1,214 @@
+<!Doctype html>
+<html>
+  <head>
+    <base href="www.google.com" />
+    <meta name="description" content="A basic html page">
+    <meta name="keywords" content="html,css,js" />
+    <title>Html tags demo</title> 
+    <meta name="author" content="ksg" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+
+    <style>
+      *{
+        font: 20px jokerman;
+      }
+    </style>
+  </head>
+  <body bgcolor="yellow" text="navy ">
+    <font size=""5"><h1>Html tags Demo</h1></font>
+<!-- <img src="https://unsplash.it/1920/1280" />   -->
+<fieldset align="center">
+  <legend>
+    <hr size="5" color="black">
+    <h2>
+      Registration form
+    </h2>
+    <hr size="5" color="black">
+  </legend>
+  <form  method="POST">
+  <table align="center" border="3" width="40%">
+    <tr>
+      <td>
+        <label>
+          Name
+        </label>
+      </td>
+      <td>
+        <input name="txtname" required type="text" oninvalid="setCustomValidity('name required')" oninput="setCustomValidity('')" maxlength="50" size="18" autofocus/>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>
+          Password
+        </label>
+      </td>
+      <td>
+        <input name="txtpass" type="password"  />
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>
+          Contact number
+        </label>
+      </td>
+      <td>
+        <input name="txtnum" type="number" max="9999999999" min="999999999" step="100" />
+      </td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td>
+        <label for="F">
+          Female
+        </label>
+     
+        <input checked name="rdo" id="F" type="radio" value="F" />
+        <label for="M">
+          Male
+        </label>
+     
+        <input name="rdo" type="radio" id="M" value="M" />
+      </td>
+    </tr>
+    
+    <tr>
+      <td>Subjects</td>
+      <td>
+        <label for="Fa">
+          French
+        </label>
+     
+        <input  name="chk[]" id="Fa" type="checkbox" value="F" />
+        <label for="Ma">
+          Maths
+        </label>
+     
+        <input name="chk[]" type="checkbox" id="Ma" value="M" />
+      </td>
+    </tr>
+
+
+    <td>City</td>
+    <td>
+
+        <select name="" id="">
+          <optgroup label="UP"> 
+            <option value="nda">Noida</option>
+            <option value="ag">Agra</option>
+            <option value="MT">Mathura</option>
+          </optgroup>
+          <optgroup label="MP">
+            <option value="Bhopal">Bhopal</option>
+            <option value="Ind">Indore</option>
+            <option value="Mho">Mhow</option>
+          </optgroup>
+          <optgroup label="Punjab">
+            <option value="JLND">Jallandhar</option>
+            <option value="AMRT">Amritsar</option>
+            <option value="BTND">Bathinda</option>
+          </optgroup>
+        </select>
+
+
+
+
+    </td>
+
+
+
+
+    <tr>
+      <td>Dream Company</td>
+      <td>
+        <input type="text" list="ds" />
+
+        <datalist id="ds">
+          <option value="Amazon"/>
+          <option value="Adobe"/>
+          <option value="flipkart"/>
+          <option value="IT"/>
+          <option value="Apple"/>
+          <option value="Google"/>
+        </datalist>
+      </td>
+    </tr>
+  
+
+
+    <tr>
+      <td>Image</td>
+      <td>
+        <input type="file" accept=".jpg,.png,video/*"  multiple value="file choose kr"/>
+      </td>
+    </tr>
+
+
+
+<tr>
+  <td>Working Locations</td>
+  <td>
+
+    <select multiple size="3">
+      <option value="noida">Noida</option>
+      <option value="Delhi">Delhi</option>
+      <option value="Agra">Agra</option>
+      <option value="Kolkata">Kolkata</option>
+      <option value="Mathura">Mathura</option>
+    </select>
+
+
+  </td>
+</tr>
+
+
+
+
+
+
+
+    <tr>
+      <td>
+        <input type="submit" name="'vsubmit" value="vsubmit" />
+        <input type="submit" name="'dsubmit" value="dsubmit" formnovalidate/>
+      </td>
+      <td>
+        <input type="reset" />
+      </td>
+    </tr>
+  </table>
+</form>
+</fieldset>
+
+
+
+
+<h1 style="color:blue">Lorem ipsum dolor sit amet consectetur.</h1>
+<h1 style="color:tomato">Ipsa tempora ipsum dignissimos vel necessitatibus.</h1>
+<h1 style="color:orange">Voluptatibus reprehenderit consectetur adipisci blanditiis explicabo!</h1>
+<h1 style="color:red">Aperiam tempora magnam a atque quae?</h1>
+<h1 style="color:purple">Nam tempore dolore magni nulla architecto?</h1>
+
+
+<!-- Simple Universal(*) class(.) id(#) tag
+      combinator
+                  descendant selector
+                  child selector
+                  alternate sibling selector
+                  general sibling selector
+                
+      Pseudo class selector: if we want to apply according to behaviour     (    :    )
+      Pseudo emenet selector:  if we want to apply css in a particular element   (     ::    )
+      attribute selector:  selector_or_tag_example[attr="value"]    input[type=text]     this is exact comparison
+                          selector[attr*="value"]         search throught the text, whereever finds the text, apply the css
+                          selector[attr~="value"]          search only that which have space in front and back both
+                          selector[attr^="value"]          search at the start of the text
+                          selector[attr$="value"]          search at the end of the text
+                          selector[attr|="value"]         search the ! in the text at the end of starting word
+    
+    -->
+  </body>
+</html>
